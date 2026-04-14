@@ -17,7 +17,7 @@
 }
 
 .dark-background {
-  --background-color: #000000;
+  --background-color: url('portfolio/assets/img/sfondo.webp');
   --default-color: #f3f6f4;
   --heading-color: #ffffff;
   --accent-color: #f1c232;
