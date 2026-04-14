@@ -168,30 +168,32 @@
               <h3>Mandami un messaggio!</h3>
               <p>Hai un progetto o un’idea da sviluppare? Scrivimi, sono sempre aperto a nuove collaborazioni.</p>
 
-              <form onsubmit="event.preventDefault(); alert('Grazie per il tuo messaggio!');">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="nameInput" placeholder="Full Name" required>
-                  <label for="nameInput">Nome e Cognome</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="emailInput" placeholder="Email Address" required>
-                  <label for="emailInput">Indirizzo Mail</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="subjectInput" placeholder="Subject" required>
-                  <label for="subjectInput">Oggetto</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" id="messageInput" rows="5" placeholder="Your Message" style="height: 150px" required></textarea>
-                  <label for="messageInput">Il tuo messaggio</label>
-                </div>
-
-                <div class="d-grid">
-                  <button type="submit" class="btn-submit">Invia Messaggio <i class="bi bi-send-fill ms-2"></i></button>
-                </div>
+              <form action="https://formspree.io/f/mpqkwpvo" method="POST">
+              <div class="form-floating mb-3">
+                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Full Name" required>
+                <label for="nameInput">Nome e Cognome</label>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control" id="emailInput" placeholder="Email Address" required>
+                <label for="emailInput">Indirizzo Mail</label>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input type="text" name="subject" class="form-control" id="subjectInput" placeholder="Subject" required>
+                <label for="subjectInput">Oggetto</label>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <textarea name="message" class="form-control" id="messageInput" rows="5" placeholder="Your Message" style="height: 150px" required></textarea>
+                <label for="messageInput">Il tuo messaggio</label>
+              </div>
+              
+              <input type="text" name="_gotcha" style="display:none">
+              
+              <div class="d-grid">
+                <button type="submit" class="btn-submit">Invia Messaggio <i class="bi bi-send-fill ms-2"></i></button>
+              </div>
               </form>
             </div>
           </div>
