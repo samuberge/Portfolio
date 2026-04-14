@@ -17,7 +17,7 @@
 }
 
 .dark-background {
-  --background-color: url('portfolio/assets/img/sfondo.webp');
+  --background-color: url('assets/img/sfondo.webp');
   --default-color: #f3f6f4;
   --heading-color: #ffffff;
   --accent-color: #f1c232;
@@ -32,7 +32,14 @@
 
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: var(--background-color); 
+  background-color: #000000; 
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  
   font-family: var(--default-font);
 }
 
@@ -2431,7 +2438,7 @@ section,
   }
 }
 
-/* fixaggio faccia tagliata in visualizzazione da mobile */
+
 .face-right {
   width: 100%;
   height: auto;
@@ -2439,7 +2446,7 @@ section,
   object-position: right center;
 }
 
-/* fixaggio testi coperti da header */
+
 .portfolio-details,
 .portfolio-details-2,
 .portfolio-details-3,
